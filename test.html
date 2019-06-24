@@ -1,0 +1,37 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Document</title>  
+    <style>  
+        .p1 {  
+            width: 200px;  
+            height: 100px;  
+            overflow-x: scroll;  
+            /* 内容会被裁剪，会以滚动条显示 */ 
+            overflow-y: hidden;  /* 超出内容不可见 */ 
+            white-space: nowrap;  /* 不换行 */ 
+            /* 文本不会换行，会在同一行上继续，直到遇到<br>为止 */ 
+        }  
+    </style>  
+</head>  
+<body>  
+    <p class="p1">  
+        <img src="http://img1.imgtn.bdimg.com/it/u=1577759731,3108671782&fm=26&gp=0.jpg" alt="">  
+        <img src="http://img1.imgtn.bdimg.com/it/u=1577759731,3108671782&fm=26&gp=0.jpg" alt="">  
+        <img src="http://img1.imgtn.bdimg.com/it/u=1577759731,3108671782&fm=26&gp=0.jpg" alt="">  
+        <img src="http://img1.imgtn.bdimg.com/it/u=1577759731,3108671782&fm=26&gp=0.jpg" alt="">  
+        <img src="http://img1.imgtn.bdimg.com/it/u=1577759731,3108671782&fm=26&gp=0.jpg" alt="">  
+    </p>
+
+    <script>
+
+        console.log('123123')
+        function onStorageChange(e){
+          console.log('123123123')
+        }
+        window.addEventListener('storage', onStorageChange)
+
+      </script>
+</body>  
+</html>
